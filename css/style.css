@@ -81,7 +81,7 @@ h6 {
   width: 100%;
   height: 60vh;
   position: relative;
-  background: url("../img/intro-carousel/1.jpg") no-repeat;
+  background: url("../img/bullvpn_page.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -125,7 +125,7 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started,
-#intro .intro-content .btn-projects {
+#intro .intro-content .btn-service {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -148,12 +148,12 @@ h6 {
   color: #0c2e8a;
 }
 
-#intro .intro-content .btn-projects {
+#intro .intro-content .btn-service {
   background: #50d8af;
   border: 2px solid #50d8af;
 }
 
-#intro .intro-content .btn-projects:hover {
+#intro .intro-content .btn-service:hover {
   background: none;
   color: #50d8af;
 }
@@ -187,20 +187,24 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 
+/* Nav Menu Essentials */
 
 .nav-menu,
 .nav-menu * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
+  bottom: 40px;
+
+ 
 }
 
 .nav-menu ul {
   position: absolute;
   display: none;
   top: 100%;
-  right: 0;
-  
+  left: 0;
+  z-index: 99;
 }
 
 .nav-menu li {
@@ -212,26 +216,71 @@ h6 {
   float: left;
 }
 
+/* row Languge */
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
   display: block;
 }
 
-.nav-menu ul ul {
-  top: 0;
-  left: 100%;
-}
 
-.nav-menu ul li {
-  min-width: 180px;
-}
 
+/* Nav Meu Container */
 
 #nav-menu-container {
   float: right;
-  margin: 20;
-  vertical-align: middle;
+  margin: 0;
 }
+
+/* Nav Meu Styling */
+
+.nav-menu a {
+  padding: 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: #0c2e8a;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  outline: none;
+}
+
+.nav-menu li:hover > a,
+.nav-menu .menu-active > a {
+  color: #50d8af;
+}
+
+.nav-menu > li {
+  margin-left: 10px;
+}
+
+.nav-menu ul {
+  margin: 10px;
+  padding: 40px;
+  box-shadow: 0px 0px 20px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+
+.nav-menu ul li {
+  transition: 0.3s;
+}
+
+.nav-menu ul li a {
+  padding: 10px;
+  color: #333;
+  transition: 0.3s;
+  display: block;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.nav-menu ul li:hover > a {
+  color: #50d8af;
+}
+
+.nav-menu ul ul {
+  margin: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Sections
@@ -343,7 +392,7 @@ h6 {
 }
 #services .services-info p {
   margin-bottom: 0;
-  color: #000;
+  color: #555;
 }
 
 #services .services-info h3 {
@@ -355,7 +404,7 @@ h6 {
 }
 
 #services .services-info a {
-  color: #000;
+  color: #0c2e8a;
 }
 
 #services .services-info a:hover {
@@ -381,6 +430,68 @@ h6 {
 #services .form button[type="submit"]:hover {
   background: #2dc899;
 }
+/*---------button server------------*/
+
+
+/*  Office
+--------------------------------*/
+
+#office {
+  background: #fff;
+  padding: 30px 0;
+}
+
+#office .office-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.4s;
+}
+
+#office .office-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#office .office-item h2 {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#office .office-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#office .office-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#office .office-item:hover .office-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#office .office-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 
 
 /* Contact Section
@@ -489,4 +600,17 @@ h6 {
 
 #contact .form button[type="submit"]:hover {
   background: #2dc899;
+}
+
+
+/* ===== Footer ===== */
+footer {
+  padding: 40px 0;
+  margin-top: 60px;
+  background: #e9e9e9 repeat;
+  border-top: 1px solid #dcdcdc;
+  font-size: 14px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.175);
+  width: 100%;
+  
 }

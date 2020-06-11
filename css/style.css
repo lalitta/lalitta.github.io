@@ -41,7 +41,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  padding: 20px 0;
+  padding: 18px 0;
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -73,13 +73,15 @@ h6 {
   margin: 0;
 }
 
+
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
 
 #intro {
-  width: 100%;
-  height: 60vh;
+  width: auto !important;
+  height: auto !important;
   position: relative;
   background-size: cover;
 }
@@ -113,20 +115,23 @@ h6 {
 
 #intro .intro-content h2 {
   color: #0c2e8a;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 64px;
   font-weight: 700;
 }
+
+@media (max-width: 767px) {
+  #intro .intro-content .intro-btn a {
+    font-size: 6px;
+    padding: 5px 12px;
+  }
+}
 @media (max-width: 767px) {
   #intro .intro-content h2 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
-@media (max-width: 767px) {
-  #intro .intro-content .intro-btn {
-    font-size: 14px;
-  }
-}
+
 
 #intro .intro-content h2 span {
   color: #50d8af;
@@ -136,20 +141,20 @@ h6 {
 #intro .intro-content .btn-get-started,
 #intro .intro-content .btn-service {
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 28px;
-  border-radius: 2px;
+  padding: 10px 24px;
+  border-radius: 1px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 5px;
   color: #fff;
 }
 
 #intro .intro-content .btn-get-started {
   background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  border: 3px solid #0c2e8a;
 }
 
 #intro .intro-content .btn-get-started:hover {
@@ -159,7 +164,7 @@ h6 {
 
 #intro .intro-content .btn-service {
   background: #50d8af;
-  border: 2px solid #50d8af;
+  border: 3px solid #50d8af;
 }
 
 #intro .intro-content .btn-service:hover {
@@ -175,7 +180,7 @@ h6 {
   content: '';
   background-color: rgba(255, 255, 255, 0.7);
   position: absolute;
-  height: 100%;
+  height: 100%; 
   width: 100%;
   top: 0;
   right: 0;
@@ -185,8 +190,8 @@ h6 {
 }
 
 #intro #carouselExampleSlidesOnly .carousel-item {
-  width: 100%;
-  height: 60vh;
+  width: auto !important;
+  height: auto !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -204,6 +209,8 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+
 
 
 /*--------------------------------------------------------------
@@ -254,7 +261,7 @@ h6 {
   color: #333;
   transition: 0.3s;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: none;
   text-align: left;
 }
@@ -265,18 +272,61 @@ h6 {
   background-color: #fff;
   z-index: 999;
  font-family: 'Times New Roman', Times, serif;
- 
+ line-height: 2.5;
  
   
 }
 #navbarNav {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   
 }
-#navbar #navbarNav{
-  word-spacing: 100px;
+
+.dropdown {
+  position: relative;
 }
+.dropdown-toggle:focus {
+  outline: 0;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  background-clip: padding-box;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #838383;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus{
+  text-decoration: none;
+  background-color: #f6f6f6;
+}
+
+
 
 
 
@@ -331,6 +381,7 @@ h6 {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
+  
 }
 
 #about .content h2 {
@@ -371,11 +422,20 @@ h6 {
   padding-bottom: 10px;
 }
 
+
+#about .container .row .about-img {
+  width: auto !important;
+  height: auto !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: opacity;
+}
 /* services Section
 --------------------------------*/
 
 #services {
-  padding: 30px 0;
+  padding: 20px;
 }
 
 #services .services-info {
@@ -383,8 +443,8 @@ h6 {
   text-align: center;
 }
 
-#services .services-info i {
-  font-size: 48px;
+#services .services-info p {
+  font-size: 16px;
   display: inline-block;
   margin-bottom: 10px;
   color: #50d8af;
@@ -429,7 +489,29 @@ h6 {
 #services .form button[type="submit"]:hover {
   background: #2dc899;
 }
-/*---------button server------------*/
+/*---------service border------------*/
+
+
+/* ===== News ===== */
+.services-info {
+  margin-bottom: 40px;
+  height: auto !important;
+  width: auto !important;
+}
+.services-persec {
+    padding-top: 5px;
+  border: 1px solid #e9e9e9;
+  margin-bottom: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+}
+.services-info > p {
+  font-weight: 0;
+  font-size: 12px;
+  
+}
 
 
 /*  Office
@@ -535,9 +617,13 @@ h6 {
 }
 
 #contact .contact-address,
-#contact .contact-phone,
 #contact .contact-email {
   margin-bottom: 20px;
+  
+}
+#contact .contact-phone{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd; 
 }
 
 #contact #google-map {

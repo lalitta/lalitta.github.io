@@ -381,8 +381,9 @@ h6 {
 #about .about-img img {
   margin-left: -15px;
   max-width: 100%;
-  
 }
+
+
 
 #about .content h2 {
   color: #0c2e8a;
@@ -423,14 +424,6 @@ h6 {
 }
 
 
-#about .container .row .about-img {
-  width: auto !important;
-  height: auto !important;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition-property: opacity;
-}
 /* services Section
 --------------------------------*/
 
@@ -489,10 +482,12 @@ h6 {
 #services .form button[type="submit"]:hover {
   background: #2dc899;
 }
+
+
 /*---------service border------------*/
 
 
-/* ===== News ===== */
+/* ===== New service ===== */
 .services-info {
   margin-bottom: 40px;
   height: auto !important;
@@ -571,6 +566,30 @@ h6 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+/*  News
+--------------------------------*/
+
+#news {
+  padding: 60px 0 30px 0;
+}
+
+#news .news-img {
+  overflow: hidden;
+  text-align: center;
+}
+
+#news .news-img img {
+  margin-right: right;
+  max-width: 100%;
+}
+
+#news .news-img h2 {
+  color: #0c2e8a;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
 }
 
 
